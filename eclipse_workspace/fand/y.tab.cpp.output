@@ -1,0 +1,221 @@
+   0  $accept : top $end
+
+   1  top : pmf
+
+   2  pmf : 'F'
+   3      | 'D'
+   4      | 'D' '@' PROB
+   5      | wlist
+   6      | bterm
+   7      | bterm '@' PROB
+
+   8  wlist : wterm
+   9        | wlist '/' wterm
+
+  10  allele : ALLELE
+
+  11  wterm : allele
+  12        | allele '@' PROB
+
+  13  bterm : '(' slist ')' '@' 'B'
+
+  14  slist : allele
+  15        | slist '/' allele
+
+state 0
+	$accept : . top $end  (0)
+
+	ALLELE  shift 1
+	'F'  shift 2
+	'D'  shift 3
+	'('  shift 4
+	.  error
+
+	top  goto 5
+	pmf  goto 6
+	allele  goto 7
+	wlist  goto 8
+	wterm  goto 9
+	bterm  goto 10
+
+
+state 1
+	allele : ALLELE .  (10)
+
+	.  reduce 10
+
+
+state 2
+	pmf : 'F' .  (2)
+
+	.  reduce 2
+
+
+state 3
+	pmf : 'D' .  (3)
+	pmf : 'D' . '@' PROB  (4)
+
+	'@'  shift 11
+	$end  reduce 3
+
+
+state 4
+	bterm : '(' . slist ')' '@' 'B'  (13)
+
+	ALLELE  shift 1
+	.  error
+
+	allele  goto 12
+	slist  goto 13
+
+
+state 5
+	$accept : top . $end  (0)
+
+	$end  accept
+
+
+state 6
+	top : pmf .  (1)
+
+	.  reduce 1
+
+
+state 7
+	wterm : allele .  (11)
+	wterm : allele . '@' PROB  (12)
+
+	'@'  shift 14
+	$end  reduce 11
+	'/'  reduce 11
+
+
+state 8
+	pmf : wlist .  (5)
+	wlist : wlist . '/' wterm  (9)
+
+	'/'  shift 15
+	$end  reduce 5
+
+
+state 9
+	wlist : wterm .  (8)
+
+	.  reduce 8
+
+
+state 10
+	pmf : bterm .  (6)
+	pmf : bterm . '@' PROB  (7)
+
+	'@'  shift 16
+	$end  reduce 6
+
+
+state 11
+	pmf : 'D' '@' . PROB  (4)
+
+	PROB  shift 17
+	.  error
+
+
+state 12
+	slist : allele .  (14)
+
+	.  reduce 14
+
+
+state 13
+	bterm : '(' slist . ')' '@' 'B'  (13)
+	slist : slist . '/' allele  (15)
+
+	'/'  shift 18
+	')'  shift 19
+	.  error
+
+
+state 14
+	wterm : allele '@' . PROB  (12)
+
+	PROB  shift 20
+	.  error
+
+
+state 15
+	wlist : wlist '/' . wterm  (9)
+
+	ALLELE  shift 1
+	.  error
+
+	allele  goto 7
+	wterm  goto 21
+
+
+state 16
+	pmf : bterm '@' . PROB  (7)
+
+	PROB  shift 22
+	.  error
+
+
+state 17
+	pmf : 'D' '@' PROB .  (4)
+
+	.  reduce 4
+
+
+state 18
+	slist : slist '/' . allele  (15)
+
+	ALLELE  shift 1
+	.  error
+
+	allele  goto 23
+
+
+state 19
+	bterm : '(' slist ')' . '@' 'B'  (13)
+
+	'@'  shift 24
+	.  error
+
+
+state 20
+	wterm : allele '@' PROB .  (12)
+
+	.  reduce 12
+
+
+state 21
+	wlist : wlist '/' wterm .  (9)
+
+	.  reduce 9
+
+
+state 22
+	pmf : bterm '@' PROB .  (7)
+
+	.  reduce 7
+
+
+state 23
+	slist : slist '/' allele .  (15)
+
+	.  reduce 15
+
+
+state 24
+	bterm : '(' slist ')' '@' . 'B'  (13)
+
+	'B'  shift 25
+	.  error
+
+
+state 25
+	bterm : '(' slist ')' '@' 'B' .  (13)
+
+	.  reduce 13
+
+
+11 terminals, 8 nonterminals
+16 grammar rules, 26 states

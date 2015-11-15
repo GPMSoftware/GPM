@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="355" key="DIALOG_WIDTH"/>
+		<item value="404" key="DIALOG_Y_ORIGIN"/>
+		<item value="993" key="DIALOG_X_ORIGIN"/>
+		<item value="439" key="DIALOG_HEIGHT"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="" key="selection"/>
+		<list key="findhistory">
+			<item value="exit"/>
+			<item value="nothing to match"/>
+			<item value="from_db"/>
+			<item value="B2_1e3"/>
+			<item value="BULK2"/>
+			<item value="Bulk2"/>
+			<item value="B2"/>
+			<item value="B2_"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Study1DataSets"/>
+			<item value="BULK_TESTS"/>
+			<item value="BULK2_TESTS"/>
+			<item value="m_hw_ident"/>
+			<item value="m_nrc410_ident"/>
+			<item value="m_nrc44_ident"/>
+			<item value="bbsf"/>
+			<item value="hback"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="296" key="DIALOG_Y_ORIGIN"/>
+		<item value="484" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

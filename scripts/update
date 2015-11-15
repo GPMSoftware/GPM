@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# This script copies all the libraries needed by the programs into ./lib and the binaries into ./bin
+# Create a directory tree with this structure:
+# VX.Y
+#   bin
+#   lib
+#   geotrans_data
+#
+# cd into vX.Y and run this script.
+#
+workspace=../../eclipse_workspace
+
+export LD_LIBRARY_PATH=$workspace/cuda_accel/Debug:$workspace/fand/Debug:/usr/local/cuda/lib64:/usr/local/lib:/usr/local/geotrans/lib64
+
+cp `ldd $workspace/gmatch/Debug/gmatch | awk '{print $3}'` lib
+
+cp /usr/local/geotrans/data/* geotrans_data; chmod -R +w geotrans_data
+
+cp $workspace/gmatch/Debug/gmatch bin
+

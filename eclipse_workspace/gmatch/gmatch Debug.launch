@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.cdt.launch.applicationLaunchType">
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.AUTO_SOLIB" value="true"/>
+<listAttribute key="org.eclipse.cdt.debug.mi.core.AUTO_SOLIB_LIST"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.DEBUG_NAME" value="gdb"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=".gdbinit"/>
+<listAttribute key="org.eclipse.cdt.debug.mi.core.SOLIB_PATH"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.STOP_ON_SOLIB_EVENTS" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.breakpointsFullPath" value="false"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.commandFactory" value="org.eclipse.cdt.debug.mi.core.standardCommandFactory"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.protocol" value="mi"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="org.eclipse.cdt.debug.mi.core.CDebuggerNew"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+<booleanAttribute key="org.eclipse.cdt.launch.ENABLE_REGISTER_BOOKKEEPING" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.launch.ENABLE_VARIABLE_BOOKKEEPING" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList&gt;&lt;content id=&quot;*_M_p-_M_p-_M_dataplus-m_source_file_name-this-MessageStream::startLine-(cast)&quot; val=&quot;char*&quot;/&gt;&lt;content id=&quot;*_M_p-_M_p-_M_dataplus-m_source_file_name-this-MessageStream::startLine-(cast_to_array)&quot; val=&quot;0:10&quot;/&gt;&lt;content id=&quot;_M_p-_M_dataplus-m_source_file_name-this-MessageStream::startLine-(cast_to_array)&quot; val=&quot;0:10&quot;/&gt;&lt;content id=&quot;_M_p-_M_dataplus-m_prefix-this-MessageStream::startLine-(cast_to_array)&quot; val=&quot;0:10&quot;/&gt;&lt;/contentList&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;globalVariableList/&gt;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;memoryBlockExpressionList/&gt;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/gmatch"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="gmatch"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.debug.178563686"/>
+<booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/gmatch"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="XXX_THETA" value="0.01"/>
+<mapEntry key="XX_FAND_PORT" value="3307"/>
+<mapEntry key="UNKNOWN_ALLELES" value="IGNORE"/>
+<mapEntry key="LR_THRESHOLD" value="100"/>
+<mapEntry key="X_PROC" value="CPU"/>
+<mapEntry key="GPUDevices_info" value="true"/>
+<mapEntry key="XXX_SUB_POP_MODEL" value="NRC4.10"/>
+<mapEntry key="warn_redirect" value="true"/>
+<mapEntry key="XX_FAND_USER" value="fanduser"/>
+<mapEntry key="info_redirect" value="false"/>
+<mapEntry key="cuda_accel_info" value="true"/>
+<mapEntry key="RELATIVE" value="IDENT:SIB:D1"/>
+<mapEntry key="ok_redirect" value="true"/>
+<mapEntry key="error_redirect" value="true"/>
+<mapEntry key="XX_FAND_PASS" value="fandpass"/>
+<mapEntry key="cuda_match_info" value="true"/>
+<mapEntry key="MSPCCS_DATA" value="/usr/local/geotrans/data"/>
+<mapEntry key="POPDATA" value="${workspace_loc:/fand/popdata/Example}"/>
+<mapEntry key="ok_default_out" value="true"/>
+<mapEntry key="XX_FAND_SERVER" value="fandserver"/>
+<mapEntry key="LD_LIBRARY_PATH" value="${workspace_loc:cuda_accel/Debug}:${workspace_loc:/fand/Debug}:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/amd64:/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/../lib/amd64:/usr/local/cuda/lib64:/usr/local/lib:/usr/lib64/xulrunner-1.9.2:/usr/local/geotrans/lib64"/>
+<mapEntry key="dbmatch_info" value="true"/>
+</mapAttribute>
+<mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+<mapEntry key="[run]" value="org.eclipse.cdt.cdi.launch.localCLaunch"/>
+<mapEntry key="[debug]" value="org.eclipse.cdt.cdi.launch.localCLaunch"/>
+</mapAttribute>
+</launchConfiguration>

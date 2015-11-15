@@ -1,0 +1,13 @@
+#Wed Nov 11 23:11:36 GMT 2015
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_NAME" SIZE\="537"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_VALUE" SIZE\="411"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView"/>\n</VariablesViewMemento>
+pref_state_memento.org.eclipse.debug.ui.RegisterView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684"/>
+Console.highWaterMark=1008000
+Console.lowWaterMark=1000000
+pref_state_memento.org.eclipse.debug.ui.ModuleView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="200" org.eclipse.debug.ui.SASH_VIEW_PART\="684"/>
+pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+preferredDetailPanes=ModuleDetailPane\:ModuleDetailPane|DefaultDetailPane\:DefaultDetailPane|
+org.eclipse.debug.ui.switch_perspective_on_suspend=always
+preferredTargets=default\:default|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|
+eclipse.preferences.version=1
+org.eclipse.debug.ui.user_view_bindings=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<viewBindings>\n<view id\="org.eclipse.cdt.debug.ui.SignalsView">\n<perspective id\="org.eclipse.debug.ui.DebugPerspective" userAction\="opened"/>\n</view>\n<view id\="org.eclipse.debug.ui.DebugView">\n<perspective id\="org.eclipse.debug.ui.DebugPerspective" userAction\="opened"/>\n</view>\n</viewBindings>\n

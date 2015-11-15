@@ -1,0 +1,5 @@
+#Mon Mar 05 09:27:56 GMT 2012
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation
+eclipse.preferences.version=1
+ENABLED_DECORATORS=org.eclipse.cdt.ui.indexedFiles\:false,org.eclipse.mylyn.context.ui.decorator.interest\:true,org.eclipse.mylyn.tasks.ui.decorators.task\:true,org.eclipse.mylyn.team.ui.changeset.decorator\:true,org.eclipse.team.cvs.ui.decorator\:true,org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.cdt.ui.editors.textfont
